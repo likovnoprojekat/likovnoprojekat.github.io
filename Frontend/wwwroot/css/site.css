@@ -1,0 +1,436 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+a {
+  color:rgb(145,145,145);
+  text-decoration: none;
+}
+a:hover {
+  color:rgb(94, 94, 94)
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.arrowBox 
+{
+  position:relative;
+  margin-top: 70px;
+  padding:2px;
+  border: 2px solid rgb(145,145,145);
+  border-top: 0px;
+  background-color: rgb(255, 255, 248);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height:30px;
+  width:200px;
+}
+.navBar
+{
+  border-bottom: 2px solid rgb(145,145,145);
+  position: absolute;
+  left:0;
+  width:100%;
+  height:70px;
+  background-color: rgb(255, 255, 248);
+}
+
+.flexContainer:hover
+{
+  animation:dragdown 1s forwards;
+}
+.flexContainer
+{
+  display:flex;
+  justify-content: center;
+  height:130px;
+  position:relative;
+  top:-70px;
+  
+}
+
+@keyframes dragdown
+{
+  from
+  {
+    position:relative;
+  }
+  to
+  {
+    position: relative;
+    top:0px;
+  }
+}
+.borderLeft
+{
+  width:300px;
+  position:absolute;
+  height:550px;
+  top:100px;
+  left:-110px;
+  background-image: linear-gradient(to right,rgb(60,99,255),rgb(60,99,255,0));
+}
+
+.borderRight
+{
+  width:300px;
+  position:absolute;
+  height:550px;
+  top:100px;
+  right:-108px;
+  background-image: linear-gradient(to left,rgb(60,99,255),rgb(60,99,255,0));
+}
+
+.welcome
+{
+  background-image: linear-gradient(to right, rgb(60,99,255),rgb(60,99,255),rgba(60,99,255,0.5), rgb(60, 99, 255), rgb(60, 99, 255));
+  color:rgb(255, 255, 248);
+  position:relative;
+  left:-150px;
+  width:120.85%;
+  top:-50px;
+  height:200px
+}
+
+.welcome>img {
+  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to right, rgb(0, 0, 0,1),rgb(0, 0, 0,1),rgb(0, 0, 0,1), rgb(0, 0, 0,0), rgb(0,0,0,0));
+  position: relative;
+  width:100%;
+  height:195px;
+  top: -50px;
+}
+
+.mainContent
+{
+  position:relative;
+  overflow-y: auto;
+  top:25px;
+  left:300px;
+  height: 300px;
+  width:50%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  text-align: center !important;
+  flex-wrap: nowrap;
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+  z-index:60;
+}
+
+.box1
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  padding: 20px;
+  width: 450px;
+  height: 380px;
+}
+
+.box2
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+}
+
+.refuseBtn
+{
+  background-color:white;
+  border: 2px solid rgb(255, 0, 0); 
+  width:90%; 
+  height:80px;
+  left:21.5px;
+  border-radius: 25px;
+  position: relative;
+  bottom: 30px;
+  padding: 20px;
+}
+
+.refuseBtn:hover
+{
+  cursor:pointer;
+  animation: refuseBtnAnim .5s forwards;
+}
+
+@keyframes refuseBtnAnim
+{
+  from
+  {
+    background-color:white;
+  }
+  to
+  {
+    transform:scale(1.1);
+    background-color:rgb(255, 0, 0);
+  }
+}
+.acceptBtn
+{
+  background-color:white;
+  border: 2px solid rgb(0, 255, 0);
+  width:120px; 
+  height:40px;
+  border-radius: 25px;
+  position: relative;
+  padding: 20px;
+}
+.acceptBtn:hover
+{
+  cursor: pointer;
+  animation:acceptBtnAnim .5s forwards;
+}
+@keyframes acceptBtnAnim
+{
+  from
+  {
+    background-color:white;
+  }
+  to
+  {
+    transform:scale(1.1);
+    background-color:rgb(0, 255, 0);
+  }
+}
+
+div.acceptBtn>a
+{
+  position:relative;
+  top:-10px;
+  left:5px;
+}
+
+.inputBox
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+}
+
+.sideProfile
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  top:50px;
+  padding: 20px;
+  width: 450px;
+  height: 520px;
+}
+
+.refuseBtn>h1
+{
+  position: relative;
+  left:80px;
+  top:-10px;
+}
+
+.circle {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 3px solid rgb(145,145,145);
+}
+
+.dashed
+{
+  border-style: dashed;
+}
+#cam:hover>.fa-camera, #cam:hover>b
+{
+  color: black;
+}
+
+.VIP
+{
+  background-color:rgb(50, 50, 50);
+  color:yellow;
+  width: 200px;
+  border-radius: 25px;
+  position: relative;
+  top:-45px;
+  left:220px;
+}
+.VIP:hover
+{
+  background-color: black;
+  color:gold;
+}
+.VIP>h2
+{
+  position:relative;
+  left:15px;
+}
+
+.mainProfile
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: absolute;
+  top:50px;
+  left: 500px;
+  padding: 20px;
+  width: 900px;
+  height: 520px;
+}
+
+.transactionBox
+{
+  background-color:rgb(247, 246, 255);
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  padding: 20px;
+  width: 99%;
+  height: 200px;
+}
+
+.payment
+{
+  background-color:rgb(247, 246, 255);
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  width: 99%;
+  height: 200px;
+}
+
+.cardFilled
+{
+  background-color: white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  width: 200px;
+  height:70%;
+}
+.cardEmpty
+{
+  background-color: white;
+  border: 2px solid rgb(145,145,145);
+  border-radius: 9px;
+  width: 150px;
+  height:70%;
+  margin-left: 20px;
+  position: relative;
+  left:200px;
+  bottom:70%;
+}
+.cardEmpty:hover
+{
+  border: 2px solid rgb(0, 17, 255);
+}
+.cardEmpty:hover>b
+{
+  color:black;
+}
+
+.searchBar
+{
+  border: 2px solid rgb(0,17,225);
+  border-radius: 9px;
+  width:65%;
+  position: absolute;
+  top:60px;
+  left: 400px;
+}
+
+.cars
+{
+  background-color: white;
+  border: 2px solid rgb(0,17,225);
+  border-radius: 9px;
+  width:65%;
+  height: 470px;
+  position: absolute;
+  margin-top: 20px;
+  top:90px;
+  left: 400px;
+  padding:20px;
+}
+
+.car1
+{
+  background-color:rgb(247, 246, 255);
+  border: 2px solid rgb(0,17,225);
+  border-radius: 9px;
+  position:relative;
+  width:100%;
+  height: 200px; 
+}
+
+.carDetails
+{
+  margin-top: 20px;
+  background-color:rgb(247, 246, 255);
+  border: 2px solid rgb(0,17,225);
+  border-radius: 9px;
+  position:relative;
+  width:100%;
+  height: 200px; 
+}
+
+.car1>h2, .carDetails>h2
+{
+  position:relative;
+  left:320px;
+  top:-230px;
+}
+
+.categories
+{
+  background-color:white;
+  border: 2px solid rgb(0, 17, 255);
+  border-radius: 9px;
+  position: relative;
+  top:60px;
+  left:100px;
+  padding: 20px;
+  width: 250px;
+  height: 520px;
+}
+
+.range-slider.grad {
+  --progress-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) inset;
+  --progress-flll-shadow: var(--progress-shadow);
+  --fill-color: linear-gradient(to right, LightCyan, var(--primary-color));
+  --thumb-shadow: 0 0 4px rgba(0, 0, 0, 0.3),
+    -3px 9px 9px rgba(255, 255, 255, 0.33) inset,
+    -1px 3px 2px rgba(255, 255, 255, 0.33) inset,
+    0 0 0 99px var(--primary-color) inset;
+
+  }
+  .range-slider.grad>input:hover{
+      --thumb-transform: scale(1.2);
+    }
+
+    .range-sinput:active {
+      --thumb-shadow: inherit;
+      --thumb-transform: scale(1);
+    }
+  

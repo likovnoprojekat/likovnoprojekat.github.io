@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Listing";
+}
+
+<input class=searchBar placeholder="Pretraži...">
+
+<div class=cars>
+    <div class=car1>
+        <img src="~/gklasa.png" style="transform:scale(0.65); position:relative; left:-75px; top:-15px;"/>
+        <h2>Mercedes Benz - G Klasa - Crna
+            <h5 style="position: relative; left:320px; top:-210px;">Broj sedišta: 5</h5>
+            <h5 style="position: relative; left:320px; top:-200px;">Menjač: Poluautomatski-automatski</h5>
+            <h5 style="position: relative; left:320px; top:-190px;">Kilometraža: Neograničena</h5>
+            <h5 style="position: relative; left:500px; bottom:306px;">Veličina: SUV</h5>
+        </h2>
+        <h6 style="position:relative; bottom:290px; left:700px;">&euro;105/dan</h6>
+        <div id=iznajmi class=acceptBtn style="bottom:290px; left:670px;"><a style="left:12.5px">Iznajmi</a></div>
+    </div>
+</div>
+
+<div class=categories>
+    <h1>Filteri:</h1>
+
+    <h2 style="color:rgb(145,145,145)">Otvorena Kategorija
+        <h3>Opcija 1 <input type=checkbox style="transform:scale(2)"></h3>
+        <h3>Opcija 2 <input type=checkbox style="transform:scale(2)"></h3>
+    </h2>
+
+    <h2 style="color:rgb(145,145,145)">Zatvorena Kategorija</h2>
+
+    <br><br><br><br><br>
+    <div class="range-slider grad" style='--min:0; --max:10000; --step:100; --value:200; --text-value:"200"; --prefix:"€"'> Opseg cena:<br>
+  100<input type="range" min="100" max="10000" step="100" value="200" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify((+this.value).toLocaleString()))">10000
+  <output></output>
+  <div class='range-slider__progress'></div>
+</div>
+</div>

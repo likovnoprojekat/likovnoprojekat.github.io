@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class= "box2" style="position:relative; left:525px; top:100px">
+    <h2>PRIJAVA</h2>
+    <br>
+    <label for=email>E-Mail adresa:</label><br>
+    <input class=inputBox id=email name=email type=email>
+    <br> <br>
+    <label for=pass>Lozinka:</label><br> 
+    <input class=inputBox id=pass name=pass type=password>
+    <br>
+    <div class=acceptBtn style=left:100px;top:15px>
+        <a asp-area="" asp-controller="Profile" asp-action="Index">Prijavi se</a>
+    </div>
+</div>

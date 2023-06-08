@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Likovno</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Frontend.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
+</head>
+<body style="background-color:rgb(155, 187, 255);">
+    <div class="flexContainer" style="z-index:100">
+        <div>
+            <div class="navBar">
+                <a class="display-6" asp-area="" asp-controller="Home" asp-action="Index" style="position:relative; left:30px;">⌂ Početak</a>
+                <a class="display-6" asp-area="" asp-controller="Listing" asp-action="Index"style="position:relative; left:435px;">Listing Automobila</a>
+                <a class="display-6" asp-area="" asp-controller="Profile" asp-action="Login"style="position:relative; left:630px;">Prijavi se</a>
+                <a class="display-6" asp-area="" asp-controller="Profile" asp-action="Register"style="position:relative; left:660px;">Registruj se</a>
+            </div>
+            
+            <div class = "text-center arrowBox">
+                &or;
+            </div>
+        </div>
+    </div>
+    <div class="container"style="position:relative; top:-90px;">
+        <main role="main" class="pb-3" >
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="z-index:50; background-color:rgb(255, 255, 248)">
+        <div class="container">
+            &copy; Matej Medakovic III7
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
